@@ -1,3 +1,5 @@
+import logo from "../../../src/assets/images/cafe-bianco-logo.png";
+
 function Header() {
   return (
     <header>
@@ -8,11 +10,11 @@ function Header() {
             href="index.html"
           >
             <img
-              src="images/coffee-beans.png"
+              src={logo}
               className="navbar-brand-image img-fluid"
               alt="Barista Cafe Template"
             />
-            Barista
+            Bianco
           </a>
 
           <button
@@ -43,7 +45,7 @@ function Header() {
 
               <li className="nav-item">
                 <a className="nav-link click-scroll" href="#section_3">
-                  Our Menu
+                  Menu
                 </a>
               </li>
 

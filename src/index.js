@@ -2,16 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-// Import jQuery, Bootstrap, and Sticky.js
-import $ from "jquery"; // Import jQuery
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import "bootstrap"; // Import Bootstrap JS (includes jQuery and Popper.js)
+// Import Swiper CSS (correct path)
+import "swiper/css";
 
-import "sticky-js"; // Import Sticky.js
+// Import Bootstrap CSS (no need for Bootstrap JS if you aren't using jQuery-dependent components)
+import "bootstrap/dist/css/bootstrap.min.css";
 
-// Custom JavaScript
-import "./assets/custom.js"; // Assuming custom.js uses jQuery and Sticky.js
-import "./assets/tooplate-barista.css"; // Your specific template CSS
+// Import jQuery and Bootstrap JS if needed
+import "bootstrap"; // Bootstrap JS
+
+// Import Sticky.js and other custom JS
+import "sticky-js"; // Assuming Sticky.js is used in custom JS
+import "./assets/custom.js"; // Custom JS file that uses jQuery and Sticky.js
+import "./assets/tooplate-barista.css"; // Template-specific CSS
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -23,7 +26,5 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Performance measurement (optional)
 reportWebVitals();
