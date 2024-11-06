@@ -1,3 +1,5 @@
+import Slider from "./Slider";
+
 function Hero() {
   return (
     <section
@@ -31,8 +33,9 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="hero-slides"></div>
+      <div className="hero-slides">
+        <Slider />
+      </div>
     </section>
   );
 }
