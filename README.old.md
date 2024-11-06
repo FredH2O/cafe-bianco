@@ -1,2 +1,0 @@
-# cafe-bianco
-React project
