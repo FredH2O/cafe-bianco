@@ -680,7 +680,7 @@ strong {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url("../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg");
+  background-image: url("./images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -755,7 +755,7 @@ strong {
 }
 
 .reviews-block-image-wrap {
-  background-image: url("../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg");
+  background-image: url("./images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -788,7 +788,7 @@ strong {
   BOOKING SECTION              
 -----------------------------------------*/
 .booking-section {
-  background-image: url("../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg");
+  background-image: url("./images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -841,7 +841,7 @@ strong {
       rgba(0, 0, 0, 0.45),
       rgba(188, 108, 37, 1)
     ),
-    url("../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg");
+    url("./images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -1,16 +1,16 @@
-function About() {
+export default function About() {
   return (
-    <section class="about-section section-padding" id="section_2">
-      <div class="section-overlay"></div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-12">
-            <div class="ratio ratio-1x1">
+    <section className="about-section section-padding" id="section_2">
+      <div className="section-overlay"></div>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-6 col-12">
+            <div className="ratio ratio-1x1">
               <video
                 autoplay=""
                 loop=""
                 muted=""
-                class="custom-video"
+                className="custom-video"
                 poster=""
               >
                 <source
@@ -20,26 +20,26 @@ function About() {
                 Your browser does not support the video tag.
               </video>
 
-              <div class="about-video-info d-flex flex-column">
-                <h4 class="mt-auto">We Started Since 2009.</h4>
+              <div className="about-video-info d-flex flex-column">
+                <h4 className="mt-auto">We Started Since 1992.</h4>
 
-                <h4>Best Cafe in Klang.</h4>
+                <h4>Best Cafe in Dublin.</h4>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-            <em class="text-white">Barista.co</em>
+          <div className="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
+            <em className="text-white">Ola!</em>
 
-            <h2 class="text-white mb-3">Cafe KL</h2>
+            <h2 className="text-white mb-3">Café Bianco</h2>
 
-            <p class="text-white">
+            <p className="text-white">
               The café had been in the town for as long as anyone could
               remember, and it had become a beloved institution among the
               locals.
             </p>
 
-            <p class="text-white">
+            <p className="text-white">
               The café was run by a friendly and hospitable couple, Mr. and Mrs.
               Johnson. Barista Cafe is free Bootstrap 5 HTML layout provided by{" "}
               <a rel="nofollow" href="https://www.tooplate.com" target="_blank">
@@ -50,7 +50,7 @@ function About() {
 
             <a
               href="#barista-team"
-              class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"
+              className="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"
             >
               Meet Baristas
             </a>
