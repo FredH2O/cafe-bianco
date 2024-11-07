@@ -1,0 +1,71 @@
+/*---------------------------------------
+  HERO        
+-----------------------------------------*/
+.hero-section {
+  background-color: var(--dark-color);
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  text-align: center;
+  height: 100vh; /* Ensure it covers the full screen height */
+}
+
+.hero-section::after {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-medium);
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-55%, -50%) rotate(45deg);
+  width: 300px;
+  height: 450px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  color: var(--white-color);
+}
+
+.small-text {
+  color: var(--secondary-color);
+}
+
+.hero-section .custom-border-btn {
+  border-color: transparent;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 9;
+}
+
+.hero-slides {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Make sure the text content stays fixed in the center */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+}
+
+.hero-content .btn {
+  margin-top: 20px;
+}

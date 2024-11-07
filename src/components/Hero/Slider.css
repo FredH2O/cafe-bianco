@@ -1,0 +1,34 @@
+/* Make the Swiper fill the whole screen */
+.swiper-css {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Style for each slide to zoom the images and make them cover the entire slide */
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: transform 1.5s ease;
+}
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the image */
+  pointer-events: none; /* Allow interaction with the image beneath */
+  z-index: 1;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.1);
+  transition: 1s ease;
+}

@@ -344,10 +344,6 @@ strong {
   color: var(--white-color);
 }
 
-/*.navbar .navbar-brand-image {
-  filter: brightness(0) invert(1);
-}*/
-
 .navbar-brand-image {
   width: 60px;
   height: auto;
@@ -511,59 +507,6 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
-}
-
-/*---------------------------------------
-  HERO        
------------------------------------------*/
-.hero-section {
-  background-color: var(--dark-color);
-  position: relative;
-  overflow: hidden;
-  min-height: 620px;
-  text-align: center;
-}
-
-.hero-section::after {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-radius: var(--border-radius-medium);
-  content: "";
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-55%, -50%) rotate(45deg);
-  width: 250px;
-  height: 350px;
-  pointer-events: none;
-}
-
-@media screen and (min-width: 991px) {
-  .hero-section {
-    height: 100vh;
-  }
-}
-
-.hero-section h1 {
-  color: var(--white-color);
-}
-
-.small-text {
-  color: var(--secondary-color);
-}
-
-.hero-section .custom-border-btn {
-  border-color: transparent;
-}
-
-.hero-section .container {
-  position: relative;
-  z-index: 9;
-}
-
-.hero-slides {
-  width: 100%;
-  height: 100%;
-  position: absolute !important;
 }
 
 .opening-hours-list {
