@@ -1,0 +1,26 @@
+[
+  {
+    "img": "/images/baristaOwner.png",
+    "name": "Darragh",
+    "role": "Owner",
+    "description": "Owner of the café, known for great service."
+  },
+  {
+    "img": "/images/barista1.png",
+    "name": "Otto",
+    "role": "Manager",
+    "description": "Ensuring smooth daily operations."
+  },
+  {
+    "img": "/images/barista2.png",
+    "name": "Maddison",
+    "role": "Senior Barista",
+    "description": "Expert in crafting specialty drinks."
+  },
+  {
+    "img": "/images/barista3.png",
+    "name": "Chinny",
+    "role": "Barista",
+    "description": "Friendly and passionate about coffee."
+  }
+]

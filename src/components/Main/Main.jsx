@@ -1,4 +1,4 @@
-import Barista from "../Barista/Barista";
+import Barista from "../Barista/Barista.jsx";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
 import Menu from "../Menu/Menu";
