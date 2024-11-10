@@ -1,7 +1,7 @@
 import Barista from "../Barista/Barista.jsx";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
-import Menu from "../Menu/Menu";
+import Menu from "../Menu/Menu.jsx";
 import Reviews from "../Reviews/Reviews";
 import Contact from "../Contact/Contact";
 
