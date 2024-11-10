@@ -1,7 +1,18 @@
 import Slider from "./Slider";
 import "./Hero.css";
+import { useState } from "react";
 
 function Hero() {
+  const [click, setClick] = useState(false);
+
+  function handleClick() {
+    setClick((e) => !e);
+  }
+
+  function handleAnimationEnd() {
+    setClick(false);
+  }
+
   return (
     <section
       className="hero-section d-flex justify-content-center align-items-center"
@@ -22,7 +33,11 @@ function Hero() {
               Our Story
             </a>
             <a
-              className="btn custom-btn smoothscroll me-2 mb-2"
+              onClick={handleClick}
+              onAnimationEnd={handleAnimationEnd}
+              className={`animate__animated ${
+                click ? "animate__hinge" : ""
+              } btn custom-btn smoothscroll me-2 mb-2`}
               href="#section_3"
             >
               <strong>Check Menu</strong>

@@ -1,4 +1,18 @@
+import video from "../../assets/videos/video1.mp4";
+import "./About.css";
+import { useState } from "react";
+
 export default function About() {
+  const [click, setClick] = useState(false);
+
+  function handleClick() {
+    setClick((e) => !e);
+  }
+
+  function handleAnimationEnd() {
+    setClick(false);
+  }
+
   return (
     <section className="about-section section-padding" id="section_2">
       <div className="section-overlay"></div>
@@ -7,23 +21,19 @@ export default function About() {
           <div className="col-lg-6 col-12">
             <div className="ratio ratio-1x1">
               <video
-                autoplay=""
-                loop=""
-                muted=""
+                autoPlay={true}
+                loop={true}
+                muted={true}
                 className="custom-video"
-                poster=""
               >
-                <source
-                  src="videos/pexels-mike-jones-9046237.mp4"
-                  type="video/mp4"
-                />
+                <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
               <div className="about-video-info d-flex flex-column">
-                <h4 className="mt-auto">We Started Since 1992.</h4>
+                <h4 className="mt-auto">Est. 1992</h4>
 
-                <h4>Best Cafe in Dublin.</h4>
+                <h4>Home of Dublin's Favourite Coffee</h4>
               </div>
             </div>
           </div>
@@ -34,23 +44,22 @@ export default function About() {
             <h2 className="text-white mb-3">Café Bianco</h2>
 
             <p className="text-white">
-              The café had been in the town for as long as anyone could
-              remember, and it had become a beloved institution among the
-              locals.
+              Café Bianco has grown into a beloved community landmark, warmly
+              welcoming locals and visitors alike.
             </p>
 
             <p className="text-white">
-              The café was run by a friendly and hospitable couple, Mr. and Mrs.
-              Johnson. Barista Cafe is free Bootstrap 5 HTML layout provided by{" "}
-              <a rel="nofollow" href="https://www.tooplate.com" target="_blank">
-                Tooplate
-              </a>
-              .
+              The café is managed with dedication and care by Mr. and Mrs.
+              McKeogh, who bring a personal touch to each guest's experience.
             </p>
 
             <a
               href="#barista-team"
-              className="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4"
+              onClick={handleClick}
+              onAnimationEnd={handleAnimationEnd}
+              className={`animate__animated ${
+                click ? "animate__hinge" : ""
+              } smoothscroll btn custom-btn custom-border-btn mt-3 mb-4 hover-shake`}
             >
               Meet Baristas
             </a>

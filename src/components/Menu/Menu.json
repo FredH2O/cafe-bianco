@@ -1,0 +1,115 @@
+{
+  "sandwiches": [
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "BLT",
+      "price": 8.95,
+      "description": "Bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Grilled Cheese",
+      "price": 6.5,
+      "description": "Melted cheese on toasted bread."
+    },
+    {
+      "name": "Turkey & Avocado Sandwich",
+      "price": 9.95,
+      "description": "Turkey, avocado, bacon, and mayo on toasted bread."
+    },
+    {
+      "name": "Caprese Sandwich",
+      "price": 8.5,
+      "description": "Tomato, mozzarella, basil, and balsamic glaze on toasted bread."
+    }
+  ],
+  "salads": [
+    {
+      "name": "Caesar Salad",
+      "price": 7.95,
+      "description": "Romaine, croutons, parmesan, and Caesar dressing."
+    },
+    {
+      "name": "Greek Salad",
+      "price": 8.5,
+      "description": "Tomato, cucumber, olives, feta, and olive oil."
+    },
+    {
+      "name": "Garden Salad",
+      "price": 6.95,
+      "description": "Mixed greens, tomato, cucumber, and vinaigrette."
+    },
+    {
+      "name": "Chicken Salad",
+      "price": 9.95,
+      "description": "Grilled chicken, lettuce, tomato, and ranch dressing."
+    },
+    {
+      "name": "Caprese Salad",
+      "price": 8.95,
+      "description": "Tomato, mozzarella, basil, and balsamic glaze."
+    }
+  ],
+  "coffees": [
+    {
+      "name": "Americano",
+      "price": 3.5,
+      "oldprice": 4.5,
+      "description": "Espresso with hot water."
+    },
+    {
+      "name": "Latte",
+      "price": 4.5,
+      "oldprice": 5.5,
+      "description": "Espresso with steamed milk."
+    },
+    {
+      "name": "Cappuccino",
+      "price": 4.75,
+      "oldprice": 5.0,
+      "description": "Espresso with steamed milk and foam."
+    },
+    {
+      "name": "Mocha",
+      "price": 5.0,
+      "oldprice": 6.0,
+      "description": "Espresso with chocolate and steamed milk."
+    },
+    {
+      "name": "Flat White",
+      "price": 4.5,
+      "oldprice": 5.5,
+      "description": "Espresso with microfoam milk."
+    }
+  ],
+  "teas": [
+    {
+      "name": "Black Tea",
+      "price": 2.5,
+      "description": "Bold, rich tea leaves."
+    },
+    {
+      "name": "Green Tea",
+      "price": 2.75,
+      "description": "Light, refreshing green tea."
+    },
+    {
+      "name": "Herbal Tea",
+      "price": 2.95,
+      "description": "Caffeine-free herbal blend."
+    },
+    {
+      "name": "Chai Latte",
+      "price": 4.0,
+      "description": "Spiced tea with steamed milk."
+    },
+    {
+      "name": "Iced Tea",
+      "price": 2.5,
+      "description": "Chilled tea served over ice."
+    }
+  ]
+}
