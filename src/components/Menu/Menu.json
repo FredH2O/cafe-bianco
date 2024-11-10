@@ -1,0 +1,110 @@
+{
+  "sandwhiches": [
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "BLT",
+      "price": 8.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Grilled Cheese",
+      "price": 6.5,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Turkey & Avocado Sandwhich",
+      "price": 9.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Caprese Sandwhich",
+      "price": 8.5,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    }
+  ],
+  "salads": [
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    }
+  ],
+  "coffees": [
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    }
+  ],
+  "teas": [
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    },
+    {
+      "name": "Club Sandwich",
+      "price": 10.95,
+      "description": "Turkey or chicken, bacon, lettuce, tomato, and mayo on toasted bread."
+    }
+  ]
+}

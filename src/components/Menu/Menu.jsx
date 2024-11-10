@@ -1,3 +1,5 @@
+import Categories from "./Menu.json";
+
 export default function Menu() {
   return (
     <section className="menu-section section-padding" id="section_3">
@@ -7,85 +9,25 @@ export default function Menu() {
             <div className="menu-block-wrap">
               <div className="text-center mb-4 pb-lg-2">
                 <em className="text-white">Delicious Menu</em>
-                <h4 className="text-white">Breakfast</h4>
+                <h4 className="text-white">Lunch</h4>
               </div>
+              {Categories.sandwhiches.map((item, index) => (
+                <div className="menu-block" key={index}>
+                  <div className="d-flex">
+                    <h6>{item.name}</h6>
 
-              <div className="menu-block">
-                <div className="d-flex">
-                  <h6>Pancakes</h6>
+                    <span className="underline"></span>
 
-                  <span className="underline"></span>
+                    <strong className="ms-auto">
+                      €{item.price.toFixed(2)}
+                    </strong>
+                  </div>
 
-                  <strong className="ms-auto">$12.50</strong>
+                  <div className="border-top mt-2 pt-2">
+                    <small>{item.description}</small>
+                  </div>
                 </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
-                </div>
-              </div>
-
-              <div className="menu-block my-4">
-                <div className="d-flex">
-                  <h6>Toasted Waffle</h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="text-white ms-auto">
-                    <del>$16.50</del>
-                  </strong>
-
-                  <strong className="ms-2">$12.00</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Brewed coffee and steamed milk</small>
-                </div>
-              </div>
-
-              <div className="menu-block">
-                <div className="d-flex">
-                  <h6>
-                    Fried Chips
-                    <span className="badge ms-3">Recommend</span>
-                  </h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$15.0</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
-                </div>
-              </div>
-
-              <div className="menu-block my-4">
-                <div className="d-flex">
-                  <h6>Pancakes</h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$12.50</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
-                </div>
-              </div>
-
-              <div className="menu-block">
-                <div className="d-flex">
-                  <h6>Banana Cakes</h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$18.0</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -95,83 +37,25 @@ export default function Menu() {
                 <em className="text-white">Favourite Menu</em>
                 <h4 className="text-white">Coffee</h4>
               </div>
+              {Categories.coffees.map((item, index) => (
+                <div className="menu-block" key={index}>
+                  <div className="d-flex">
+                    <h6>{item.name}</h6>
 
-              <div className="menu-block">
-                <div className="d-flex">
-                  <h6>Latte</h6>
+                    <span className="underline"></span>
 
-                  <span className="underline"></span>
+                    <strong className="text-white ms-auto">
+                      <del>€{item.price}</del>
+                    </strong>
 
-                  <strong className="text-white ms-auto">
-                    <del>$12.50</del>
-                  </strong>
+                    <strong className="ms-2">€{item.price}</strong>
+                  </div>
 
-                  <strong className="ms-2">$7.50</strong>
+                  <div className="border-top mt-2 pt-2">
+                    <small>{item.description}</small>
+                  </div>
                 </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
-                </div>
-              </div>
-
-              <div className="menu-block my-4">
-                <div className="d-flex">
-                  <h6>
-                    White Coffee
-                    <span className="badge ms-3">Recommend</span>
-                  </h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$5.90</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Brewed coffee and steamed milk</small>
-                </div>
-              </div>
-
-              <div className="menu-block">
-                <div className="d-flex">
-                  <h6>Chocolate Milk</h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$5.50</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
-                </div>
-              </div>
-
-              <div className="menu-block my-4">
-                <div className="d-flex">
-                  <h6>Greentea</h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$7.50</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Fresh brewed coffee and steamed milk</small>
-                </div>
-              </div>
-
-              <div className="menu-block">
-                <div className="d-flex">
-                  <h6>Dark Chocolate</h6>
-
-                  <span className="underline"></span>
-
-                  <strong className="ms-auto">$7.25</strong>
-                </div>
-
-                <div className="border-top mt-2 pt-2">
-                  <small>Rich Milk and Foam</small>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
