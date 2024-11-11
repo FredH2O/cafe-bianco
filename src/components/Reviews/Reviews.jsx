@@ -1,3 +1,8 @@
+import Customer1 from "../../assets/images/reviews/customer1.png";
+import Customer2 from "../../assets/images/reviews/customer2.png";
+import Customer3 from "../../assets/images/reviews/customer3.png";
+import Customer4 from "../../assets/images/reviews/customer4.png";
+
 export default function Reviews() {
   return (
     <section
@@ -18,7 +23,7 @@ export default function Reviews() {
                 <div className="reviews-block">
                   <div className="reviews-block-image-wrap d-flex align-items-center">
                     <img
-                      src="images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg"
+                      src={Customer1}
                       className="reviews-block-image img-fluid"
                       alt=""
                     />
@@ -59,7 +64,7 @@ export default function Reviews() {
                 <div className="reviews-block">
                   <div className="reviews-block-image-wrap d-flex align-items-center">
                     <img
-                      src="images/reviews/senior-man-white-sweater-eyeglasses.jpg"
+                      src={Customer2}
                       className="reviews-block-image img-fluid"
                       alt=""
                     />
@@ -100,13 +105,54 @@ export default function Reviews() {
                 <div className="reviews-block">
                   <div className="reviews-block-image-wrap d-flex align-items-center">
                     <img
-                      src="images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg"
+                      src={Customer3}
                       className="reviews-block-image img-fluid"
                       alt=""
                     />
 
                     <div className="">
                       <h6 className="text-white mb-0">Olivia</h6>
+                      <em className="text-white"> Customers</em>
+                    </div>
+                  </div>
+
+                  <div className="reviews-block-info">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+
+                    <div className="d-flex border-top pt-3 mt-4">
+                      <strong className="text-white">
+                        4.5 <small className="ms-2">Rating</small>
+                      </strong>
+
+                      <div className="reviews-group ms-auto">
+                        <i className="bi-star-fill"></i>
+                        <i className="bi-star-fill"></i>
+                        <i className="bi-star-fill"></i>
+                        <i className="bi-star-fill"></i>
+                        <i className="bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-container timeline-container-right">
+              <div className="timeline-content">
+                <div className="reviews-block">
+                  <div className="reviews-block-image-wrap d-flex align-items-center">
+                    <img
+                      src={Customer4}
+                      className="reviews-block-image img-fluid"
+                      alt=""
+                    />
+
+                    <div className="">
+                      <h6 className="text-white mb-0">Don</h6>
                       <em className="text-white"> Customers</em>
                     </div>
                   </div>
