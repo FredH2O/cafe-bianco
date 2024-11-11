@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "swiper/css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.json";
 import "bootstrap";
 import "sticky-js";
-import "./assets/tooplate-barista.css";
+import "./assets/custom.css";
 import "animate.css";
 
 import App from "./App";

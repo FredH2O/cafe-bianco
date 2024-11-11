@@ -1,6 +1,8 @@
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 :root {
   --white-color: #ffffff;
   --primary-color: #bc6c25;
