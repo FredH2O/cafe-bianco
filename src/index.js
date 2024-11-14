@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "swiper/css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.json";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap";
 import "sticky-js";
 import "./assets/custom.css";
