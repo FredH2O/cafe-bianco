@@ -8,6 +8,8 @@ import "bootstrap";
 import "sticky-js";
 import "./assets/custom.css";
 import "animate.css";
+import "lodash";
+import "leaflet/dist/leaflet.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

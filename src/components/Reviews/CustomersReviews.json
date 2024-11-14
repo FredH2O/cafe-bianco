@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Janet",
+    "review": "I come here regularly to read my novels and enjoy some much-needed peace and quiet. It's the perfect spot to escape from the hustle and bustle of daily life, and I always leave feeling relaxed and recharged.",
+    "star": 5,
+    "img": "/images/customer1.png",
+    "occupation": "Customer"
+  },
+  {
+    "name": "Glenn",
+    "review": "Every morning, I stop by to read the latest papers while enjoying a nice, hot cup of coffee. The staff is always welcoming, and the atmosphere is perfect for starting the day off right. I couldn’t imagine my morning routine without it!",
+    "star": 4,
+    "img": "/images/customer2.png",
+    "occupation": "Business Owner"
+  },
+  {
+    "name": "John",
+    "review": "I come here often to unwind and relax with colleagues after a long day. The vibe is always laid-back, and it's a great place for some casual conversation. It's the kind of place where you can just let your worries melt away.",
+    "star": 4.5,
+    "img": "/images/customer3.png",
+    "occupation": "Trainer"
+  },
+  {
+    "name": "Abufemi",
+    "review": "This is a fantastic place to just chill and relax, though it can be a bit pricey for my taste. The ambiance is great, and I love spending time here with friends, but I do wish the prices were a little more affordable for regular visits.",
+    "star": 3.5,
+    "img": "/images/customer4.png",
+    "occupation": "Sales"
+  }
+]
