@@ -17,11 +17,11 @@ export default function MapComponent() {
   const zoomLevel = 20;
 
   return (
-    <div style={{ height: "300px" }}>
+    <div className="container" style={{ height: "350px", width: "100%" }}>
       <MapContainer
         center={position}
         zoom={zoomLevel}
-        style={{ width: "100%", height: "100%" }}
+        style={{ height: "100%", width: "100%" }}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <Marker position={position}>

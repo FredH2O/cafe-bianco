@@ -73,7 +73,7 @@ export default function Contact() {
             </form>
           </div>
 
-          <div className="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
+          <div className="col-lg-6 col-12 mt-5">
             <MapComponent />
           </div>
         </div>
