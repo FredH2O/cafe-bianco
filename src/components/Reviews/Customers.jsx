@@ -1,9 +1,15 @@
 import reviews from "./CustomersReviews.json";
+import _ from "lodash";
+import ReactRating from "react-rating";
+
+// Lodash library used here
 
 export default function Customers() {
+  const randomReview = _.shuffle(reviews);
+
   return (
     <>
-      {reviews.map((customer, index) => (
+      {randomReview.map((customer, index) => (
         <div
           className={`timeline-container ${
             index % 2 === 0
@@ -36,18 +42,15 @@ export default function Customers() {
                   </strong>
 
                   <div className="reviews-group ms-auto">
-                    {Array.from({ length: 5 }, (_, i) => {
-                      const currentRating = i + 1;
-                      if (customer.star >= currentRating) {
-                        return <i key={i} className="bi-star-fill"></i>;
-                      }
-
-                      if (customer.star >= currentRating - 0.5) {
-                        return <i key={i} className="bi-star-half"></i>;
-                      } else {
-                        return <i key={i} className="bi-star"></i>;
-                      }
-                    })}
+                    {
+                      <ReactRating
+                        initialRating={customer.star}
+                        readonly
+                        emptySymbol={<i className="bi-star"></i>}
+                        fullSymbol={<i className="bi bi-star-fill"></i>}
+                        placeholderSymbol={<i className="bi bi-star-half"></i>}
+                      />
+                    }
                   </div>
                 </div>
               </div>
