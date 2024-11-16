@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 export default function Form() {
@@ -8,6 +8,7 @@ export default function Form() {
     message: "",
   });
   const [show, setShow] = useState(false);
+
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
@@ -56,8 +57,14 @@ export default function Form() {
               name="personName"
               id="name"
               className="form-control"
-              placeholder="Jerry"
+              placeholder="Enter your name"
               required
+              onFocus={(e) => (e.target.placeholder = "")}
+              onBlur={(e) =>
+                (e.target.placeholder = formData.personName
+                  ? ""
+                  : "Enter your name")
+              }
               onChange={handleChange}
             />
           </div>
