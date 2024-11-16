@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 export default function Form() {
-  const inputName = useRef();
   const [formData, setFormData] = useState({
     personName: "",
     email: "",
@@ -65,7 +64,7 @@ export default function Form() {
 
           <div className="col-lg-6 col-12">
             <label htmlFor="email" className="form-label">
-              Email Address
+              Email Address <sup className="text-danger">*</sup>
             </label>
 
             <input
@@ -83,7 +82,7 @@ export default function Form() {
 
           <div className="col-12">
             <label htmlFor="message" className="form-label">
-              How can we help?
+              How can we help? <sup className="text-danger">*</sup>
             </label>
 
             <textarea
