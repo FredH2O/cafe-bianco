@@ -1,10 +1,9 @@
-import { toUpper } from "lodash";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 export default function Form() {
   const [formData, setFormData] = useState({
-    name: "",
+    personName: "",
     email: "",
     message: "",
   });
@@ -15,16 +14,25 @@ export default function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     handleShow();
+
+    setTimeout(() => {
+      setFormData({
+        personName: "",
+        email: "",
+        message: "",
+      });
+      handleClose();
+    }, 3500);
   }
 
   function handleChange(event) {
-    if (event.target.name === "name") {
-      const nameValue = event.target.value;
+    const { name, value } = event.target;
+    if (name === "personName") {
       const capitalized =
-        nameValue.charAt(0).toUpperCase() + nameValue.slice(1).toLowerCase();
-      setFormData({ ...formData, [event.target.name]: capitalized });
+        value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+      setFormData((prev) => ({ ...prev, personName: capitalized }));
     } else {
-      setFormData({ ...formData, [event.target.name]: event.target.value });
+      setFormData((prev) => ({ ...prev, [name]: value }));
     }
   }
 
@@ -43,11 +51,12 @@ export default function Form() {
             </label>
 
             <input
+              value={formData.personName}
               type="text"
-              name="name"
+              name="personName"
               id="name"
               className="form-control"
-              placeholder="Jackson"
+              placeholder="Jerry"
               required
               onChange={handleChange}
             />
@@ -55,24 +64,25 @@ export default function Form() {
 
           <div className="col-lg-6 col-12">
             <label htmlFor="email" className="form-label">
-              Email Address
+              Email Address <sup className="text-danger">*</sup>
             </label>
 
             <input
               onChange={handleChange}
+              value={formData.email}
               type="email"
               name="email"
               id="email"
               pattern="[^ @]*@[^ @]*"
               className="form-control"
-              placeholder="Jack@gmail.com"
+              placeholder="Jillian@gmail.com"
               required
             />
           </div>
 
           <div className="col-12">
             <label htmlFor="message" className="form-label">
-              How can we help?
+              How can we help? <sup className="text-danger">*</sup>
             </label>
 
             <textarea
@@ -80,8 +90,12 @@ export default function Form() {
               rows="4"
               className="form-control"
               id="message"
-              placeholder="Message"
+              placeholder="Tell us what's in your mind !"
               required
+              maxLength="250"
+              value={formData.message}
+              style={{ resize: "none" }}
+              onChange={handleChange}
             ></textarea>
           </div>
         </div>
@@ -107,7 +121,7 @@ export default function Form() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Hi {formData.name}!</h4>
+          <h4>Hi {formData.personName}!</h4>
           <p style={{ color: "black" }}>
             We have sent your message to our team and we'll get back to you as
             soon as possible!
