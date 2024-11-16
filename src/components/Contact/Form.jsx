@@ -82,8 +82,14 @@ export default function Form() {
               id="email"
               pattern="[^ @]*@[^ @]*"
               className="form-control"
-              placeholder="Jillian@gmail.com"
+              placeholder="froddo123@example.dev"
               required
+              onFocus={(e) => (e.target.placeholder = "")}
+              onBlur={(e) =>
+                (e.target.placeholder = formData.email
+                  ? ""
+                  : "froddo123@example.dev")
+              }
             />
           </div>
 
@@ -103,6 +109,12 @@ export default function Form() {
               value={formData.message}
               style={{ resize: "none" }}
               onChange={handleChange}
+              onFocus={(e) => (e.target.placeholder = "")}
+              onBlur={(e) =>
+                (e.target.placeholder = formData.message
+                  ? ""
+                  : "Hello Café Bianco !")
+              }
             ></textarea>
           </div>
         </div>
