@@ -1,21 +1,20 @@
+import { Link } from "react-router-dom";
 import logo from "../../../src/assets/images/cafe-bianco-logo.png";
+import "./Header.css";
 
 function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg navbar-absolute">
         <div className="container">
-          <a
-            className="navbar-brand d-flex align-items-center"
-            href="index.html"
-          >
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img
               src={logo}
               className="navbar-brand-image img-fluid"
               alt="Barista Cafe Template"
             />
             Bianco
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler"
@@ -32,33 +31,33 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-lg-auto">
               <li className="nav-item">
-                <a className="nav-link click-scroll" href="#section_1">
+                <Link className="nav-link click-scroll" to="/">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link click-scroll" href="#section_2">
+                <Link className="nav-link click-scroll" to="/about">
                   About
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link click-scroll" href="#section_3">
+                <Link className="nav-link click-scroll" to="/menu">
                   Menu
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link click-scroll" href="#section_4">
+                <Link className="nav-link click-scroll" to="/reviews">
                   Reviews
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link click-scroll" href="#section_5">
+                <Link className="nav-link click-scroll" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
 
