@@ -1,13 +1,13 @@
 import logo from "../../../src/assets/images/cafe-bianco-logo.png";
-
+import "./Header.css";
 function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg navbar-absolute">
         <div className="container">
           <a
             className="navbar-brand d-flex align-items-center"
-            href="index.html"
+            href="#section_1"
           >
             <img
               src={logo}

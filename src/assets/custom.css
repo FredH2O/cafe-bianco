@@ -328,8 +328,9 @@ strong {
 .navbar {
   background: transparent;
   z-index: 999999;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar .container {
@@ -972,6 +973,7 @@ strong {
   .hero-section {
     padding-top: 148px;
     padding-bottom: 100px;
+    position: absolute;
   }
 
   .navbar-brand,
