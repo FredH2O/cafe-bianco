@@ -1,8 +1,7 @@
-/* CSS for positioning the navbar */
 .navbar-absolute {
   position: absolute;
-  top: 0; /* Positions the navbar at the top */
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 10; /* Makes sure the navbar stays on top of other elements */
+  z-index: 99999;
 }
