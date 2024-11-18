@@ -1,12 +1,20 @@
 import Slider from "./Slider";
 import "./Hero.css";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Hero() {
   const [click, setClick] = useState(false);
+  const navigate = useNavigate();
 
-  function handleClick() {
-    setClick((e) => !e);
+  function handleClick(e) {
+    e.preventDefault();
+
+    setClick(true);
+
+    setTimeout(() => {
+      navigate("/menu");
+    }, 2000);
   }
 
   function handleAnimationEnd() {
@@ -26,13 +34,15 @@ function Hero() {
             <p className="text-white mb-4 pb-lg-2">
               your <em>favourite</em> coffee <em>chillax'</em> destination!
             </p>
-            <a
+            <Link
+              to="/about"
               className="btn custom-btn custom-border-btn smoothscroll me-3"
               href="#section_2"
             >
               Our Story
-            </a>
-            <a
+            </Link>
+            <Link
+              to="/menu"
               onClick={handleClick}
               onAnimationEnd={handleAnimationEnd}
               className={`animate__animated ${
@@ -41,7 +51,7 @@ function Hero() {
               href="#section_3"
             >
               <strong>Check Menu</strong>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
