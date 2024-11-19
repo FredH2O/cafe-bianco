@@ -2,6 +2,7 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Qwitcher+Grypen:wght@400;700&display=swap");
 
 :root {
   --white-color: #ffffff;
@@ -10,10 +11,11 @@
   --section-bg-color: #b78752;
   --custom-btn-bg-color: #bc6c25;
   --custom-btn-bg-hover-color: #dda15e;
-  --dark-color: #000000;
+  --dark-color: #171515;
   --p-color: #e8e3e3;
   --border-color: #7fffd4;
   --link-hover-color: #e76f51;
+  --transition-bg-color: #151313;
 
   --body-font-family: "Plus Jakarta Sans", sans-serif;
 
@@ -39,7 +41,7 @@
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: var(--transition-bg-color);
   font-family: var(--body-font-family);
 }
 
@@ -66,6 +68,10 @@ h6 {
 
 h1 {
   font-size: var(--h1-font-size);
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 3px 4px 1px var(--dark-color);
 }
 
 h2 {

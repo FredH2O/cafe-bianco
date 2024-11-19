@@ -62,13 +62,14 @@ function Header() {
             </ul>
 
             <div className="ms-lg-3">
-              <a
+              <Link
+                to="/reservation"
                 className="btn custom-btn custom-border-btn"
                 href="reservation.html"
               >
                 Reservation
                 <i className="bi-arrow-up-right ms-2"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

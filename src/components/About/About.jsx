@@ -1,6 +1,7 @@
 import video from "../../assets/videos/video1.mp4";
 import "./About.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   const [click, setClick] = useState(false);
@@ -53,7 +54,8 @@ export default function About() {
               McKeogh, who bring a personal touch to each guest's experience.
             </p>
 
-            <a
+            <Link
+              to="/barista"
               href="#barista-team"
               onClick={handleClick}
               onAnimationEnd={handleAnimationEnd}
@@ -62,7 +64,7 @@ export default function About() {
               } smoothscroll btn custom-btn custom-border-btn mt-3 mb-4 hover-shake`}
             >
               Meet Baristas
-            </a>
+            </Link>
           </div>
         </div>
       </div>
