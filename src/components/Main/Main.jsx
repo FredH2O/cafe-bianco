@@ -7,6 +7,7 @@ import Reviews from "../Reviews/Reviews";
 import Contact from "../Contact/Contact";
 import { Routes, Route } from "react-router-dom";
 import AnimatedRoute from "./AnimatedRoute"; // Adjust the path as needed
+import Reservation from "../Reservation/Reservation.jsx";
 
 function Main() {
   const location = useLocation(); // Get the current location
@@ -59,6 +60,14 @@ function Main() {
           element={
             <AnimatedRoute>
               <Contact />
+            </AnimatedRoute>
+          }
+        />
+        <Route
+          path="/reservation"
+          element={
+            <AnimatedRoute>
+              <Reservation />
             </AnimatedRoute>
           }
         />
