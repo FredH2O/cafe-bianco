@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Reservation.css";
 import { format, addDays } from "date-fns";
+import ConfirmedModal from "./ConfirmedModal";
 
 export default function Reservation() {
   const today = new Date();
-  const minDate = format(today, "yyyy-MM-dd");
+  const minDate = format(addDays(today, 1), "yyyy-MM-dd");
   const maxDate = format(addDays(today, 7), "yyyy-MM-dd");
+  const [submitted, setSubmitted] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -16,11 +18,22 @@ export default function Reservation() {
     specialRequests: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  useEffect(() => {
+    if (submitted) {
+      const timing = setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+
+      return () => clearInterval(timing);
+    }
+  }, [submitted]);
+
+  const handleClose = () => {
+    setSubmitted(false);
+  };
 
   const handleDateChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData);
   };
 
   const handleChange = (e) => {
@@ -30,23 +43,30 @@ export default function Reservation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     console.log("Form submitted!!", formData);
+    setSubmitted(true);
 
-    setFormData({
-      name: "",
-      email: "",
-      tel: "",
-      date: "",
-      time: "",
-      specialRequests: "",
-    });
+    const formTimer = setTimeout(() => {
+      setFormData({
+        name: "",
+        email: "",
+        tel: "",
+        date: "",
+        time: "",
+        specialRequests: "",
+      });
+    }, 5000);
+
+    return () => {
+      clearTimeout(formTimer);
+    };
   };
 
   return (
     <section className="section-padding section-reservation">
       <div className="reservation-form ">
         <h2>Meeting Room Reservation at Cafe Bianco</h2>
+
         <form onSubmit={handleSubmit}>
           {/*name*/}
           <div className="mt-4">
@@ -129,6 +149,9 @@ export default function Reservation() {
               onChange={handleChange}
               required
             >
+              <option value="" disabled selected>
+                Pick a time.
+              </option>
               <option value="08:00">8:00 AM</option>
               <option value="09:00">9:00 AM</option>
               <option value="10:00">10:00 AM</option>
@@ -155,7 +178,16 @@ export default function Reservation() {
               }}
             ></textarea>
           </div>
-
+          {submitted && (
+            <ConfirmedModal
+              show={submitted}
+              handleClose={handleClose}
+              name={formData.name}
+              email={formData.email}
+              specialRequest={formData.specialRequests}
+              time={formData.time}
+            />
+          )}
           <button className="mt-3" type="submit">
             Submit !
           </button>
