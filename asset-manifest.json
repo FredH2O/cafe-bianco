@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cafe-bianco/static/css/main.29ea3cf4.css",
+    "main.js": "/cafe-bianco/static/js/main.9ba11204.js",
+    "static/js/453.7978a72f.chunk.js": "/cafe-bianco/static/js/453.7978a72f.chunk.js",
+    "static/media/video1.mp4": "/cafe-bianco/static/media/video1.211c0c700bb9750c128c.mp4",
+    "static/media/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg": "/cafe-bianco/static/media/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.a410f60aa150efcba300.jpg",
+    "static/media/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg": "/cafe-bianco/static/media/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.56ebb7a8086037fbe47b.jpg",
+    "static/media/cafebianco1.png": "/cafe-bianco/static/media/cafebianco1.d54492ff7869985af849.png",
+    "static/media/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg": "/cafe-bianco/static/media/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.3f64c16a62f5d781db99.jpg",
+    "static/media/bootstrap-icons.woff?": "/cafe-bianco/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/cafe-bianco-logo.png": "/cafe-bianco/static/media/cafe-bianco-logo.9791482213b606971744.png",
+    "static/media/bootstrap-icons.woff2?": "/cafe-bianco/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg": "/cafe-bianco/static/media/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.d417795c0818fdc1fa89.jpg",
+    "index.html": "/cafe-bianco/index.html",
+    "main.29ea3cf4.css.map": "/cafe-bianco/static/css/main.29ea3cf4.css.map",
+    "main.9ba11204.js.map": "/cafe-bianco/static/js/main.9ba11204.js.map",
+    "453.7978a72f.chunk.js.map": "/cafe-bianco/static/js/453.7978a72f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29ea3cf4.css",
+    "static/js/main.9ba11204.js"
+  ]
+}
