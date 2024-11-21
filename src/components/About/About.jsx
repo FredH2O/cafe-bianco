@@ -22,9 +22,9 @@ export default function About() {
           <div className="col-lg-6 col-12">
             <div className="ratio ratio-1x1">
               <video
-                autoPlay={true}
-                loop={true}
-                muted={true}
+                autoPlay
+                loop
+                muted
                 className="custom-video"
                 style={{ pointerEvents: "none" }}
               >
