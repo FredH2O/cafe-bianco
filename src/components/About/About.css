@@ -43,3 +43,21 @@
 .hover-shake:hover {
   animation: pulse 1s ease;
 }
+
+.custom-video {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-moz-media-controls {
+  display: none !important;
+}
+
+video::-ms-media-controls {
+  display: none !important;
+}
