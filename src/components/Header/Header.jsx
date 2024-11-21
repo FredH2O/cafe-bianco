@@ -13,7 +13,6 @@ function Header() {
               className="navbar-brand-image img-fluid"
               alt="Barista Cafe Template"
             />
-            Bianco
           </Link>
 
           <button
