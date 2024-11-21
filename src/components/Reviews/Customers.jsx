@@ -11,7 +11,7 @@ export default function Customers() {
     <>
       {randomReview.map((customer, index) => (
         <div
-          className={`timeline-container ${
+          className={`timeline-container mt-5 ${
             index % 2 === 0
               ? "timeline-container-left"
               : "timeline-container-right"
