@@ -1,6 +1,6 @@
 import team from "./Barista.json";
 
-export default function Barista({ img, name, role, description }) {
+export default function Barista() {
   return (
     <section
       className="barista-section section-padding section-bg"
@@ -27,7 +27,7 @@ export default function Barista({ img, name, role, description }) {
                 </div>
                 <div className="team-block-image-wrap">
                   <img
-                    src={member.img}
+                    src={`${process.env.PUBLIC_URL}/${member.img}`}
                     className="team-block-image img-fluid"
                     alt={member.name}
                   />
