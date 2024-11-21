@@ -26,6 +26,7 @@ export default function About() {
                 loop={true}
                 muted={true}
                 className="custom-video"
+                style={{ pointerEvents: "none" }}
               >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
