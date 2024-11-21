@@ -22,7 +22,7 @@ export default function Customers() {
             <div className="reviews-block">
               <div className="reviews-block-image-wrap d-flex align-items-center">
                 <img
-                  src={customer.img}
+                  src={`${process.env.PUBLIC_URL}/${customer.img}`}
                   className="reviews-block-image img-fluid"
                   alt=""
                 />
