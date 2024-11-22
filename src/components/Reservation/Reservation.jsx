@@ -144,17 +144,17 @@ export default function Reservation() {
             <label htmlFor="time">Please pick a time.</label>
             <select
               id="time"
-              value="{formData.time}"
+              value={formData.time}
               name="time"
               onChange={handleChange}
               required
             >
-              <option value="" disabled>
-                Pick a time.
+              <option value="">Pick a time slot.</option>
+              <option value="8:00">8:00 AM</option>
+              <option value="9:00">9:00 AM</option>
+              <option value="10:00" disabled>
+                10:00 AM
               </option>
-              <option value="08:00">8:00 AM</option>
-              <option value="09:00">9:00 AM</option>
-              <option value="10:00">10:00 AM</option>
               <option value="11:00">11:00 AM</option>
             </select>
           </div>
