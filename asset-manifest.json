@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cafe-bianco/static/css/main.7609ac93.css",
-    "main.js": "/cafe-bianco/static/js/main.0e673ffe.js",
+    "main.js": "/cafe-bianco/static/js/main.0296b7dd.js",
     "static/js/453.7978a72f.chunk.js": "/cafe-bianco/static/js/453.7978a72f.chunk.js",
     "static/media/video1.mp4": "/cafe-bianco/static/media/video1.211c0c700bb9750c128c.mp4",
     "static/media/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg": "/cafe-bianco/static/media/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.a410f60aa150efcba300.jpg",
@@ -14,11 +14,11 @@
     "static/media/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg": "/cafe-bianco/static/media/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.d417795c0818fdc1fa89.jpg",
     "index.html": "/cafe-bianco/index.html",
     "main.7609ac93.css.map": "/cafe-bianco/static/css/main.7609ac93.css.map",
-    "main.0e673ffe.js.map": "/cafe-bianco/static/js/main.0e673ffe.js.map",
+    "main.0296b7dd.js.map": "/cafe-bianco/static/js/main.0296b7dd.js.map",
     "453.7978a72f.chunk.js.map": "/cafe-bianco/static/js/453.7978a72f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7609ac93.css",
-    "static/js/main.0e673ffe.js"
+    "static/js/main.0296b7dd.js"
   ]
 }
