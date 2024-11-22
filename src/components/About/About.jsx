@@ -19,6 +19,28 @@ export default function About() {
       <div className="section-overlay"></div>
       <div className="container">
         <div className="row align-items-center">
+          <div className="col-lg-6 col-12 mt-5 mb-5">
+            <div className="ratio ratio-1x1">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="custom-video"
+                style={{ pointerEvents: "none" }}
+              >
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
+              <div className="about-video-info d-flex flex-column">
+                <h4 className="mt-auto">Est. 1992</h4>
+
+                <h4>Home of Dublin's Favourite Coffee</h4>
+              </div>
+            </div>
+          </div>
+
           <div className="col-lg-5 col-12 mt-1 mt-lg-0 mx-auto">
             <em className="text-white">Ola!</em>
 
@@ -45,27 +67,6 @@ export default function About() {
             >
               Meet Baristas
             </Link>
-          </div>
-
-          <div className="col-lg-6 col-12 mt-5 mb-5">
-            <div className="ratio ratio-1x1">
-              <video
-                autoPlay
-                loop
-                muted
-                className="custom-video"
-                style={{ pointerEvents: "none" }}
-              >
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-
-              <div className="about-video-info d-flex flex-column">
-                <h4 className="mt-auto">Est. 1992</h4>
-
-                <h4>Home of Dublin's Favourite Coffee</h4>
-              </div>
-            </div>
           </div>
         </div>
       </div>

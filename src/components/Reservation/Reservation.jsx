@@ -144,12 +144,12 @@ export default function Reservation() {
             <label htmlFor="time">Please pick a time.</label>
             <select
               id="time"
-              value={formData.time}
+              value="{formData.time}"
               name="time"
               onChange={handleChange}
               required
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Pick a time.
               </option>
               <option value="08:00">8:00 AM</option>

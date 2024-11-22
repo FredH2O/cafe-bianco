@@ -38,7 +38,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+          <div className="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0 d-flex flex-column align-items-center">
             <em className="text-white d-block mb-4">Contact</em>
 
             <p className="d-flex mb-1">
@@ -50,33 +50,33 @@ function Footer() {
 
             <p className="d-flex">
               <strong className="me-2">Email:</strong>
-
               <a href="mailto:info@yourgmail.com" className="site-footer-link">
                 hello@bianco.ie
               </a>
             </p>
           </div>
 
-          <div className="col-lg-5 col-12">
+          <div className="col-lg-5 col-12 d-flex flex-column align-items-center">
             <em className="text-white d-block mb-4">Opening Hours.</em>
 
             <ul className="opening-hours-list">
-              <li className="d-flex">
-                Monday - Friday
-                <span className="underline"></span>
-                <strong>7am - 6pm</strong>
+              <li className="d-flex justify-content-between">
+                Mon - Fri
+                <strong>
+                  <span className="ms-5">7:00 am - 6:00 pm</span>
+                </strong>
               </li>
-
-              <li className="d-flex">
+              <li className="d-flex justify-content-between">
                 Saturday
-                <span className="underline"></span>
-                <strong>9am - 3pm</strong>
+                <strong>
+                  <span className="ms-5">10:00 am - 6:00 pm</span>
+                </strong>
               </li>
-
-              <li className="d-flex">
+              <li className="d-flex justify-content-between">
                 Sunday
-                <span className="underline"></span>
-                <strong>9am - 2pm</strong>
+                <strong>
+                  <span className="ms-5">11:00 am - 3:00 pm</span>
+                </strong>
               </li>
             </ul>
           </div>
